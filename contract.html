@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>合同预览</title>
+    <link rel="shortcut icon" type="image/x-icon" href="http://static.szplastone.com/resources/images/sbt_logo.ico" media="screen">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-responsive.css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/swiper-4.2.0.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/communicate.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/wrap.css">
+    <link rel="stylesheet" href="css/sign.css" />
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/html2canvas/0.4.1/html2canvas.js"></script>	
+	<script src="http://www.jq22.com/jquery/jquery-migrate-1.2.1.min.js"></script>
+    <script language="javascript" src="js/jquery.jqprint-0.3.js"></script>
+    <script type="text/javascript" src="js/highcharts.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/swiper-4.2.0.min.js"></script>
+    <script type="text/javascript" src="js/scroll.js"></script>
+    <script type="text/javascript" src="js/leftTime.min.js" ></script>
+    <script type="text/javascript" src="js/Marquee.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/m_public.js"></script>
+    <script type="text/javascript" src="js/smoothscroll.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <style>
+    	.banner_tou{
+    		background:url(img/icon_shangmianji.png)  no-repeat 100%;
+    		width: 100%;
+    		height: 50px;
+    	}
+    	.banner_tou div{
+    		width: 1200px;
+    		margin: 0 auto;
+    	}
+    	.banner_tou div span{
+    		float: right;
+    	}
+    	.banner_tou div a{
+    		line-height: 50px;
+    		height: 50px;
+    		width: 25px;
+    		display: inline-block;
+    		margin-left: 30px;
+    	}
+    	.banner_tou div a.down_contract{
+    		background: url(img/icon_xiazai.png) no-repeat center;
+    	}
+    	.banner_tou div a.printing_contract{
+    		background: url(img/icon_dayin.png) no-repeat center;
+    	}
+    	.contract_box{
+    		width: 808px;
+    		height: 1142px;
+    		margin: 0 auto;
+    		background: url(img/hetong.png) no-repeat 100%;
+    		position: relative;
+    	}
+    	.shangbiank{
+    		width: 100%;
+    		height: 10px;
+    	}
+    	.contract_box input{
+    		position: absolute;
+    		font-size: 14px;
+    		line-height: 20px;
+    		height: 20px;
+    		display: inline-block;
+    		border:none;
+    		color: #000;
+    		outline: none;
+    		border-radius: 3px;
+    		box-sizing: border-box;
+    		box-shadow: none;
+    	}
+    	.contract_box input.frame_01{
+    		font-size: 12px;
+    	}
+    	.frame_01{left: 610px;top: 160px; width: 143px;}
+    	.frame_02{left: 610px;top: 185px; width: 143px;}
+    	.frame_03{left: 115px;top: 269px;}
+    	.frame_04{left: 672px;top: 265px;width: 80px;}
+    	.frame_05{left: 115px;top: 287px;}
+    	.frame_06{left: 338px;top: 287px;}
+    	.frame_07{left: 672px;top: 287px;width: 80px;}
+    	.frame_08{left: 115px;top: 305px; width: 475px;}
+    	.frame_09{left: 69px;top: 380px;width: 199px;text-align: center;}
+    	.frame_10{left: 275px;top: 380px;width: 100px;text-align: center;}
+    	.frame_11{left: 383px;top: 380px;width: 88px;text-align: center;}
+    	.frame_12{left: 476px;top: 380px;width: 129px;text-align: center;}
+    	.frame_13{left: 615px;top: 380px;width: 128px;text-align: center;}
+    	.frame_14{left: 615px;top: 420px;width: 128px;text-align: center;}
+    	.frame_15{left: 135px;top: 417px;width: 470px;}
+    	.frame_16{left: 135px;top: 444px;width: 470px;}
+    	.frame_17{left: 135px;top: 464px;width: 470px;}
+    	#dw{
+    		position: absolute;
+    		top: 10px;
+    		left:50%;
+    		margin-left: -414px;
+    		width:828px;
+    		height: 1202px;
+    		background: #fff;
+    		border:1px solid black;
+    		padding: 10px;
+    	}
+    	.close_box{
+    		float: right;
+    		width: 15px;
+    		height: 15px;
+    		margin-right: 20px;
+    		margin-top: -20px;
+    	}
+		.close{
+		 position:relative;
+		 left: 10px;
+		 width:0.2em;
+		 height:1em;
+		 background: #333;
+		 -webkit-transform: rotate(45deg);
+		 -moz-transform: rotate(45deg);
+		 -o-transform: rotate(45deg);
+		 -ms-transform: rotate(45deg);
+		 transform: rotate(45deg);
+		 display: inline-block;
+		}
+		.close:after{
+		 content: "";
+		 position: absolute;
+		 top: 0;
+		 left: 0;
+		 width:0.2em;
+		 height:1em;
+		 background: #333;
+		 -webkit-transform: rotate(270deg);
+		 -moz-transform: rotate(270deg);
+		 -o-transform: rotate(270deg);
+		 -ms-transform: rotate(270deg);
+		 transform: rotate(270deg);
+		}
+		#dw button{
+			width: 50px;
+			height: 25px;
+			margin-left: 10px;
+			background-color: #f53838;
+			border-radius: 5px;
+			text-align: center;
+			color: #fff;
+			border: none;
+			outline: none;
+		}
+		.bt_box{
+			float: right;
+		}
+    </style>
+</head>
+	<body>
+		<div class="banner_tou">
+			<div>
+				<span>
+					<a href="#" class="down_contract" onclick="doScreenShot()" title="下载"></a>
+				</span>	
+			</div>		
+		</div>	
+		<div id="content">
+			<div class="shangbiank"></div>
+				<div class="contract_box" id="main">
+					<input type="text" readonly class="frame_01" name="htbh" value="123456789987654321"/>
+					<input type="text" readonly class="frame_02" name="htrq" value="2015/5/25"/>
+					<input type="text" readonly class="frame_03" name="mf01" value="塑宝通科技有限公司"/>
+					<input type="text" readonly class="frame_04" name="mffzr01" value="郑光明"/>
+					<input type="text" readonly class="frame_05" name="dh" value="13000000000"/>
+					<input type="text" readonly class="frame_06" name="cz" value="subaotong@128.com"/>
+					<input type="text" readonly class="frame_07" name="mffzr02" value="黎志成"/>
+					<input type="text" readonly class="frame_08" name="dz" value="广东省深圳市宝安区松岗街道立业路兆丰祥大厦1219号"/>
+					<input type="text" readonly class="frame_09" name="hwmc" value="PC/ABS AC310H-ab"/>
+					<input type="text" readonly class="frame_10" name="bz" value="25kg"/>
+					<input type="text" readonly class="frame_11" name="sl" value="100"/>
+					<input type="text" readonly class="frame_12" name="dj" value="28600.00"/>
+					<input type="text" readonly class="frame_13" name="zj" value="2860000"/>
+					<input type="text" readonly class="frame_14" name="fktj" value="货到付款"/>
+					<input type="text" readonly class="frame_15" name="" value="123456"/>
+					<input type="text" readonly class="frame_16" name="jhfs" value="货到付款"/>
+					<input type="text" readonly class="frame_17" name="jhrq" value="2018/6/01"/>				
+				</div>
+			<div id="dw" >
+				<div class="bt_box">
+					<button title="打印" onclick="copyshow()">打印</button>
+					<button title="关闭" onclick="closeok()">关闭</button>
+				</div>
+			<!--　　<div class="close_box" title="关闭" onclick="closeok()">
+			　　　　<span class="close"></span>
+			　　</div> -->
+			</div>
+		</div>
+		
+	</body>
+	<script>
+		//打印
+		function copyshow(){
+			$(".hetong_img").jqprint();
+	    }		
+		$("#dw").hide();
+		//关闭图片
+		function closeok(){
+		 $("#dw").hide();
+		}
+		//点击截图
+		function doScreenShot(){			
+			if($(".down_contract").hasClass('on')){
+				alert("您已经下载过图片！");
+			}else{
+				$(".down_contract").addClass('on');
+				$("#dw").show();
+				 html2canvas($("#main"), {
+				  onrendered: function(canvas) {
+				   canvas.id = "mycanvas"; 
+				   var mainwh=$("#main").width(); 
+				   var mainhg=$("#main").height();
+				   var img = convertCanvasToImage(canvas);
+				   console.log(img);
+				   //document.body.appendChild(img);
+				   $("#dw").append(img) //添加到展示图片div区域
+				   img.onload = function() {
+				    img.onload = null;
+				//  canvas = convertImageToCanvas(img, 0, 0, 1024, 600); //设置图片大小和位置
+				    canvas = convertImageToCanvas(img, 0, 0, 808, 1142); //设置图片大小和位置
+				    img.src = convertCanvasToImage(canvas).src;
+				    $(img).css({
+				     background:"#fff" 
+				    });
+				    $(img).attr("class","hetong_img");
+				    //调用下载方法 
+				     if(browserIsIe()){ //假如是ie浏览器    
+				      DownLoadReportIMG(img.src);
+				     }else{
+				      download(img.src)
+				     }
+				    }
+				   }    
+				 });
+			} 
+		} 
+		//绘制显示图片 
+		function convertCanvasToImage(canvas) {
+		 var image = new Image();
+		 image.src = canvas.toDataURL("image/png"); //获得图片地址
+		 return image;
+		}
+		//生成canvas元素，相当于做了一个装相片的框架
+		function convertImageToCanvas(image, startX, startY, width, height) {
+		 var canvas = document.createElement("canvas");
+		 canvas.width = width;
+		 canvas.height = height;
+//		 canvas.getContext("2d").drawImage(image, startX, startY, width, height, 20, 20, 960, 600); //在这调整图片中内容的显示（大小,放大缩小,位置等）
+		 canvas.getContext("2d").drawImage(image, startX, startY, width, height, 0, 10, 808, 1122);
+		 return canvas;
+		}
+		 function DownLoadReportIMG(imgPathURL) {
+		 //如果隐藏IFRAME不存在，则添加
+		 if (!document.getElementById("IframeReportImg"))
+		  $('<iframe style="display:none;" id="IframeReportImg" name="IframeReportImg" onload="DoSaveAsIMG();" width="0" height="0" src="about:blank"></iframe>').appendTo("body");
+		 if (document.all.IframeReportImg.src != imgPathURL) {
+		  //加载图片
+		  document.all.IframeReportImg.src = imgPathURL;
+		 }
+		 else {
+		  //图片直接另存为
+		  DoSaveAsIMG();
+		 }
+		}
+		function DoSaveAsIMG() {
+		 if (document.all.IframeReportImg.src != "about:blank")
+		  window.frames["IframeReportImg"].document.execCommand("SaveAs");
+		}
+		// 另存为图片
+		function download(src) {
+		 var $a = $("<a></a>").attr("href", src).attr("download", "img.png");
+		 $a[0].click();
+		}
+		//判断是否为ie浏览器
+		function browserIsIe() {
+		 if (!!window.ActiveXObject || "ActiveXObject" in window)
+		  return true;
+		 else
+		  return false;
+		}
+
+	</script>
+</html>

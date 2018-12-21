@@ -1,0 +1,211 @@
+.footer-con1{
+    position: relative;
+    height: 140px;
+    width: 100%;
+    border-bottom: 1px solid #dddddd;
+    background-color: #fff;
+}
+.footer-con1 .con1-inner{
+    width: 1200px;
+    position: relative;
+    height: 140px;
+    z-index: 100;
+    margin: 0 auto;
+}
+.footer-con1 .con1-inner .con1-inner-ensure{
+    width: 300px;
+    height: 140px;
+    line-height: 140px;
+    float: left;
+    display: inline-block;
+}
+.footer-con1 .con1-inner .con1-inner-ensure img{
+    width: 60px;
+    height: 60px;
+    display: inline-block;
+}
+.footer-con1 .con1-inner .con1-inner-ensure p{
+    line-height: 140px;
+    font-size: 18px;
+    letter-spacing: 2px;
+    color: #222222;
+    display: inline-block;
+    padding-left: 5px;
+}
+.footer-con2{
+    position: relative;
+    height: 200px;
+    width: 100%;
+    border-bottom: 1px solid #dddddd;
+    background-color: #fff;
+}
+.footer-con2 .con2-inner{
+    width: 1200px;
+    position: relative;
+    height: 200px;
+    z-index: 100;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+.footer-con2 .con2-inner .con2-inner-desc{
+    float: left;
+    width: 150px;
+}
+.footer-con2 .con2-inner .con2-inner-desc dt{
+    color: #646464;
+    font-size: 16px;
+    font-weight: 700;
+    height: 40px;
+    line-height: 40px;
+    text-align: left;
+}
+.con2-inner-desc dd{
+    text-align: left;
+}
+.con2-inner-desc dd a {
+    width: 100px;
+    overflow: hidden;
+    text-align: left;
+    height: 30px;
+    line-height: 30px;
+    color: #8b8b8b;
+    display: block;
+}
+.con2-inner-desc dd a:hover{
+    color: #f53838;
+}
+.footer-con2 .con2-inner .qr-code{
+    float: left;
+}
+.footer-con2 .con2-inner .qr-code li {
+    float: right;
+    text-align: center;
+    margin: 0 80px;
+    width: 120px;
+    line-height: 30px;
+}
+.footer-con2 .con2-inner .qr-code li img{
+    width: 100px;
+    height: 100px;
+}
+.footer-con2 .con2-inner .tel {
+    float: left;
+    width: 280px;
+    height: 150px;
+    padding-left: 50px;
+    padding-right: 30px;
+    margin-top: 5px;
+    border-left:1px solid #f2f2f2;
+    line-height: 25px;
+}
+.tel-text{
+    font-size: 24px;
+    font-weight: 700;
+    height: 40px;
+}
+.footer-con3{
+    position: relative;
+    height: 95px;
+    width: 100%;
+    border-bottom: 1px solid #dddddd;
+    background-color: #f5f5f5;
+}
+.footer-con3 .con3-inner{
+    width: 1200px;
+    position: relative;
+    height: 95px;
+    z-index: 100;
+    margin: 0 auto;
+}
+.footer-con3 .con3-inner .copyright {
+    text-align: center;
+    padding: 20px 0;
+    font-size: 12px;
+}
+.footer-con3 .con3-inner .copyright .copy-text {
+    color: #999;
+}
+.footer-con3 .con3-inner .copyright .copy-text a{
+    padding: 0px 10px;
+}
+.footer-con3 .con3-inner .copyright .copy {
+    padding-top: 5px;
+    color: #999;
+}
+/*分页器*/
+.paga-con{
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+    background-color: #fff;
+    height: 60px;
+    box-shadow: 0 2px 2px #d8d8d8;
+}
+.pagination > .active > span{
+    background: #fff;
+    border: 1px #fc722d solid;
+    color: #fc722d;
+}
+.pagination > .active > span:hover{
+    background: #fff;
+    border: 1px #fc722d solid;
+    color: #fc722d;
+}
+.pagination > li > a,.pagination > li > span{
+    color: #333333;
+}
+.pagination > li > span:hover{
+    color: #333;
+}
+.pagination > li > span,
+.pagination > li > a{
+    margin-left: 10px;
+    height: 25px;
+    line-height: 25px;
+    padding: 0;
+    text-align: center;
+    border-radius: 5px;
+    width: 50px;
+}
+.pagination > li > span.yema,
+.pagination > li > span.yema a{
+    width: 30px;
+}
+.pagination > li > a.first,
+.pagination > li > a.last{
+    width: 50px;
+}
+.pagination > li > a.before,
+.pagination > li > a.after{
+    width: 65px;
+}
+.pagination >li .border-none{
+    border: none;
+}
+.pagination >li >input{
+    width: 60px;
+    border: 1px solid #dddddd;
+    background: none;
+    float: left;
+    height: 32px;
+    text-align: center;
+}
+.pagination span:active{
+    background: #f53838;
+    border: 1px #f53838 solid;
+}
+.pagination > .active > a,
+.pagination > .active > a:hover,
+.pagination > .active > a:focus{
+    background: #fff;
+    border: 1px #fc722d solid;
+    color: #fc722d;
+}
+.pagination > li > a:hover, .pagination > li > span:hover, .pagination > li > a:focus, .pagination > li > span:focus {
+    z-index: 2;
+    color: #333333;
+    background: #fff;
+    border: 1px #fc722d solid;
+    color: #fc722d;
+}

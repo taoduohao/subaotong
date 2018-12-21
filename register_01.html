@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>塑宝通-找回密码</title>
+    <link rel="shortcut icon" type="image/x-icon" href="http://static.szplastone.com/resources/images/sbt_logo.ico" media="screen">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-responsive.css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/swiper-4.2.0.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/communicate.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/wrap.css">
+    <link rel="stylesheet" href="css/sign.css" />
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/highcharts.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/swiper-4.2.0.min.js"></script>
+    <script type="text/javascript" src="js/scroll.js"></script>
+    <script type="text/javascript" src="js/Marquee.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/m_public.js"></script>
+    <script type="text/javascript" src="js/smoothscroll.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+</head>
+
+<body>
+    <!--头部公司公共栏-->
+    <div class="top_box">
+        <div class="loginbar" id="TOP">
+            <p class="hottel left">
+                交易时间（工作日）09:00-17:30 | 客服热线 0755-29236655
+            </p>
+            <div class="login-info right">
+                <span id="login-info">
+                    <a href="http://www.szplastone.com/reg.html">立即注册</a> |
+                    <a href="http://www.szplastone.com/login.html">直接登录</a>
+                </span>
+                <span id="phoneinfo" class="dissy">
+                    <i class="fa fa-mobile fa-1x" aria-hidden="true"></i>手机塑宝通
+                    <i class="fa fa-angle-down"></i>
+                    <div class="mobile-link">
+                        <img src="img/sbt_wechat public_qr.png">
+                    </div>
+                </span>
+            </div>
+        </div>
+    </div>
+    <div class="login-line"></div>
+    <!--logo-->
+    <div class="header-extra">
+        <!--首页logo-->
+        <div class="sbt-logo-img">
+            <a href="http://www.szplastone.com/index.html" class="on">
+                <img src="img/img_logo.png">
+                <img src="img/logobianziti.png">
+            </a>
+        </div>
+        <div class="sign-title-qian">找回密码</div>
+    </div>
+    <!--中间内容-->
+    <div class="sign-box">
+        <div class="sign-info">
+            <div class="register_box">
+                <div class="register_progress_bar one">
+                    <ul>
+                        <li>填写账号</li>
+                        <li>验证身份</li>
+                        <li>设置新密码</li>
+                        <li>完成</li>
+                    </ul>
+                </div>
+                <form action="" method="post" class="register-info-box">
+                    <label>手机号</label>
+                    <input type="text" placeholder="手机号" class="phone" /><br />
+                    <label>验证码</label>
+                    <input type="text" id="code_namber" placeholder="验证码"/>
+                    <input type="button" id="checkCode" class="code" onclick="createCode()" />
+                                                       看不清楚？<a href="#" onclick="createCode()" class="change_one">换一张</a>
+                    <br>
+                    <button type="button" class="next_btn" onclick="validate()">下一步</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!--底部-->
+    <div class="footer-con3">
+        <div class="con3-inner">
+            <div class="copyright">
+                <div class="copy-text">
+                    <a href="http://www.szplastone.com/about.html" target="_blank">关于我们</a>|
+                    <a href="http://www.szplastone.com/news.html" target="_blank">新闻资讯</a>|
+                    <a href="http://www.szplastone.com/enter.html" target="_blank">入驻说明</a>|
+                    <a href="http://www.szplastone.com/contact.html" target="_blank">联系我们</a>|
+                    <a href="http://www.szplastone.com/statement" target="_blank">法律声明</a>
+                </div>
+                <div class="copy">
+                    Copyright © 2015-2017 All Rights Reserved. 粤ICP备15009714号-1
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    var code; //在全局定义验证码      
+    //产生验证码     
+    window.onload = function () {
+        createCode();
+    }
+
+    function createCode() {
+        code = "";
+        var codeLength = 5; //验证码的长度     
+        var checkCode = document.getElementById("checkCode");
+        var random = new Array(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L',
+            'M', 'N', 'O', 'P', 'Q', 'R',
+            'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'); //随机数     
+        for (var i = 0; i < codeLength; i++) { //循环操作     
+            var charIndex = Math.floor(Math.random() * 36); //取得随机数的索引     
+            code += random[charIndex]; //根据索引取得随机数加到code上     
+        }
+        checkCode.value = code; //把code值赋给验证码     
+    }
+    //校验验证码     
+    function validate() {
+        var inputCode = document.getElementById("code_namber").value.toUpperCase(); //取得输入的验证码并转化为大写           
+        if (inputCode.length <= 0) { //若输入的验证码长度为0     
+            alert("请输入验证码！"); //则弹出请输入验证码     
+        } else if (inputCode != code) { //若输入的验证码与产生的验证码不一致时     
+            alert("验证码输入错误！"); //则弹出验证码输入错误     
+            createCode(); //刷新验证码     
+        } else { //输入正确时     
+            alert("^-^"); //弹出^-^     
+        }
+    }
+</script>
+
+</html>

@@ -1,0 +1,515 @@
+/******鎵嬫満浜岀淮鐮佹皵娉�******/
+.app-guide .app-guide-box {
+    position: absolute;
+    width: 240px;
+    height: 128px;
+    z-index: 10;
+    box-shadow: 1px 1px 15px rgba(0, 0, 0, .3);
+    top: 60px;
+    right: 30px;
+    background: #fff;
+    padding: 10px;
+    font-size: 14px;
+    /*display: none*/
+}
+
+.app-guide .app-guide-box:before {
+    width: 10px;
+    height: 10px;
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    background: #fff;
+    border: solid 1px #ddd;
+    border-width: 1px 1px 0 0;
+    position: absolute;
+    top: -6px;
+    right: 27px;
+    content: " "
+}
+
+.app-guide-box img {
+    width: 108px;
+    height: 108px;
+    float: left
+}
+.mobile-link{
+    position: absolute;
+    width:140px;
+    height:150px;
+    z-index: 10;
+    box-shadow: 1px 1px 15px rgba(0, 0, 0, .3);
+    top:40px;
+    right: -20px;
+    background: #fff;
+    padding: 10px;
+    font-size: 14px;
+    display: none;
+}
+.ml200{
+    margin-left: 200px !important;
+}
+.mobile-link:before {
+    width: 10px;
+    height: 10px;
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    background: #fff;
+    border: solid 1px #ddd;
+    border-width: 1px 1px 0 0;
+    position: absolute;
+    top: -6px;
+    right: 60px;
+    content: " "
+}
+.mobile-link img{
+    width: 100%;
+    height: 100%;
+}
+.dissy{
+    position: relative;
+    display: inline-block;
+}
+/******hot姘旀场******/
+.hot-tag{
+    width:35px;
+    height:25px;
+    border-radius: 4px;
+    position:absolute;
+    background-color:#f53838;
+    clear: both;
+    z-index: 100;
+    color: #FFFFFF;
+    line-height: 25px;
+    text-align: center;
+    top: 20px;
+    font-weight: 600;
+    font-size: 16px;
+}
+.hot-tag:before,.tag:after{
+    content:"";display:block;
+    border-width:6px;
+    position:absolute;
+    top:5px;
+    left:35px;
+    border-style: dashed dashed solid;
+    border-color:transparent  transparent transparent #f53838;
+    font-size:0;
+    line-height:0;
+    pointer-events:none;
+}
+.hot-tag:after{
+    /*bottom:-33px;*/
+    border-color: transparent transparent #FFF;
+}
+/*宸︿晶娴姩鑿滃崟*/
+.floatbar {
+    position: fixed;
+    top: 50%;
+    z-index: 1000;
+    right: 20px;
+    margin-top: -100px;
+    display: none;
+}
+.floor_guide {
+    width: 55px;
+    background: #f2f2f2;
+}
+.floor_guide li {
+    font-size: 16px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #666666;
+    border-radius: 3px;
+    border-bottom: 1px solid #FFFFFF;
+    -webkit-transition:.5s all;
+    -moz-transition:.5s all;
+    transition:.5s all;
+    z-index: 999;
+}
+.floor_guide li:hover{
+    background: #f53838;
+    color: #fff;
+}
+.floor_guide li:hover a,.floor_guide li a:hover{
+    color: #fff;
+}
+.floor_guide li dl{
+    /*display: none;*/
+    width: 82px;
+    height: 39px;
+    left: -55px;
+    position: absolute;
+    border-radius: 3px;
+    -webkit-transition:left .3s ease-in-out .01s;
+    -moz-transition:left .3s ease-in-out .01s;
+    transition:left .3s ease-in-out .01s;
+    background: rgba(225,225,225,0);
+    color: rgba(225,225,225,0);
+    z-index: -2;
+
+}
+.floor_guide li:hover dl{
+    left: -82px;
+    color: #fff;
+    display: inline-block;
+    background: #f53838;
+    /*-webkit-transition:.5s width;*/
+    /*-moz-transition:.5s width;*/
+    /*transition:.5s width;*/
+}
+.floor_guide .fa-caret-up{
+    display: block;
+    position: relative;
+}
+.floor_top{
+    font-size: 14px;
+    line-height: 20px;
+    display: block;
+    position: relative;
+}
+.floor_guide .icon_fl {
+    background: #dddddd;
+    width: 35px;
+    height: 38px;
+    display: block;
+    transition: all 0.3s linear 0s;
+}
+/*message姘旀场*/
+.info-tag{
+    position: absolute;
+    width:250px;
+    height:90px;
+    z-index: 10;
+    border:1px solid #f9b030;
+    /*box-shadow: 1px 1px 15px rgba(0, 0, 0, .3);*/
+    top: -75px;
+    right: -80px;
+    background: #fff;
+    padding: 10px;
+    font-size: 14px;
+    display: none;
+}
+.info-tag:before {
+    width: 10px;
+    height: 10px;
+    -webkit-transform: rotate(135deg);
+    -ms-transform: rotate(135deg);
+    transform: rotate(135deg);
+    background: #fff;
+    border: solid 1px #f9b030;
+    border-width: 1px 1px 0 0;
+    position: absolute;
+    top: 84px;
+    right: 90px;
+    content: " "
+}
+.info-tag img{
+    width: 45px;
+    height: 45px;
+    float: left;
+    border-radius: 30px;
+    /*border: 1px solid #f53838;*/
+    margin-right: 20px;
+}
+.info-tag .info-customer{
+    width: 180px;
+    height: 100%;
+    line-height: 30px;
+    text-align: left;
+    padding-left: 30px;
+}
+/*TEL姘旀场*/
+/*message姘旀场*/
+.tel-tag{
+    width:110px;
+    height:60px;
+    border:1px solid #f9b030;
+    position:absolute;
+    background-color:#FFF;
+    margin-top: -62px;
+    left: 150px;
+    display: none;
+    text-align: center;
+    z-index: 103;
+}
+.tel-tag:before,.tel-tag:after{
+    content:"";display:block;
+    border-width:10px;
+    position:absolute;
+    bottom:-20px;
+    left:15px;
+    border-style:solid dashed dashed;
+    border-color:#f9b030 transparent transparent;
+    font-size:0;
+    line-height:0;
+}
+.tel-tag:after{
+    bottom:-19px;
+    border-color:#FFF transparent transparent;
+}
+.tel-tag .tel-customer{
+    width: 110px;
+    height: 100%;
+    line-height: 20px;
+    padding-top: 10px;
+    padding-left: 10px;
+    text-align: left;
+    /*text-align: center;*/
+    font-style:normal;
+    font-size: 13px;
+    color: #333;
+}
+@media (min-width: 768px){
+    .modal-dialog {
+        width: 700px;
+    }
+}
+@media (min-width: 768px){
+    .modal-dialog {
+        width: 700px;
+        margin: 160px auto;
+    }
+}
+.btn-primary{
+    background: #f53838;
+    border: 1px solid #f53838;
+}
+.btn-primary:hover{
+    background: #f53838;
+    border: 1px solid #f53838;
+}
+/*鍦板潃*/
+.m_zlxg{ width:93px; height:30px; line-height:30px;cursor:pointer;float:left;margin:0 10px 0 0;display:inline;background:url(../images/zlxg2.jpg) no-repeat;}
+.m_zlxg p{ width:71px; padding-left:10px; overflow:hidden; line-height:30px; color:#333333; font-size:12px; font-family:"寰蒋闆呴粦";text-overflow:ellipsis; white-space:nowrap;}
+.m_zlxg2{ position:absolute;  border:1px solid #ded3c1;background:#fff; width:91px; display:none; max-height:224px;-height:224px; overflow-x:hidden; overflow-y:auto;white-space:nowrap;text-align: left;}
+.m_zlxg2 ul{padding: 0;}
+.m_zlxg2 li{line-height:28px;white-space:nowrap; padding-left:10px;font-family:"寰蒋闆呴粦";color:#333333; font-size:12px;}
+.m_zlxg2 li:hover{ color:#7a5a21;}
+
+/*鎸夐挳*/
+/*鍙戦�侀獙璇佺爜鎸夐挳*/
+.btn-code{
+    width: 100px;
+    height: 40px;
+    border: 1px solid #dddddd;
+    background: #f8f8f8;
+    color: #333;
+    text-align: center;
+    font-size: 14px;
+}
+/*淇濆瓨鎸夐挳*/
+.btn-send{
+    width: 160px;
+    height: 40px;
+    border: none;
+    background: #f53838;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 16px;
+}
+/*checkbox*/
+.icon-check1{
+    position: absolute;
+    left: 0px;
+    width: 18px;
+    height: 18px;
+    background: url("../images/ic_not_select.png") center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    z-index: 1000;
+    display: block;
+    margin:auto;
+}
+
+.icon-check1:checked {
+    background-image: url("../images/ic_select.png");
+}
+.icon-check2{
+    position: absolute;
+    left: 0px;
+    width: 14px;
+    height: 18px;
+    background: url("../images/ic_not_select.png") center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    transform: translateY(40%);
+    -webkit-transform: translateY(40%);
+    z-index: 1000;
+    display: block;
+    margin:auto;
+}
+
+.icon-check2:checked {
+    background-image: url("../images/ic_select.png");
+}
+.icon-check3{
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    background: url("../images/ic_not_select.png") center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    transform: translateY(40%);
+    -webkit-transform: translateY(40%);
+    z-index: 1000;
+    display: block;
+    margin:auto;
+}
+.icon-check3:checked {
+    background-image: url("../images/ic_select.png");
+}
+.am-checkbox {
+    position: relative;
+    -webkit-transition: color .25s linear;
+    transition: color .25s linear;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #333;
+    font-weight: 400;
+}
+.pr-left-20{
+    padding-left: 20px;
+}
+/*鏂伴椈杞挱鍥�*/
+.carousel-control {
+    position: absolute;
+    top: 50%;
+    bottom: 0;
+    left: 0;
+    width: 40px;
+    height: 80px;
+    font-size: 40px;
+    line-height: 80px;
+    color: #fff;
+    text-align: center;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
+    background-color: rgba(0, 0, 0, .5);
+    filter: alpha(opacity=50);
+    opacity: .5;
+    margin-top: -40px;
+}
+.form-control {
+    display: block;
+    width: 100%;
+    height: 40px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background: none;
+    border: 1px solid #ccc;
+    border-radius: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+/*鎵嬫満鍥炬爣*/
+.fa-mobile{
+    font-size: 22px;
+    transform: translateY(3px);
+}
+.table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td {
+    padding: 8px;
+    line-height: 1.42857143;
+    vertical-align: top;
+    border-top: none;
+}
+/*瓒呭嚭鐪佺暐*/
+.textoverflow, .ellipsis {
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
+}
+/*楠岃瘉鎴愬姛棰滆壊*/
+.has-success .form-control {
+    border-color: #ddd;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+}
+.has-success .form-control:focus{
+    border-color: #ddd;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+.help-block{
+    padding-left: 130px;
+}
+.has-feedback label ~ .form-control-feedback {
+     top: 0;
+}
+.landbox .help-block{
+    padding-left: 0px;
+}
+.has-error .form-control {
+    border-color: #f53838;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+}
+.has-error .form-control:focus{
+    border-color: #f53838;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+.has-error .form-control-feedback {
+    color: #f53838;
+}
+.has-error .help-block, .has-error .control-label, .has-error .radio, .has-error .checkbox, .has-error .radio-inline, .has-error .checkbox-inline, .has-error.radio label, .has-error.checkbox label, .has-error.radio-inline label, .has-error.checkbox-inline label {
+    color: #f53838;
+}
+.has-success .help-block, .has-success .control-label, .has-success .radio, .has-success .checkbox, .has-success .radio-inline, .has-success .checkbox-inline, .has-success.radio label, .has-success.checkbox label, .has-success.radio-inline label, .has-success.checkbox-inline label {
+    color: #333;
+}
+.table-striped .col-lg-12:first-child:hover{
+    color: inherit;
+}
+.table-striped .col-lg-12:hover{
+    color: #f53838;
+}
+/*.form-control-feedback {*/
+    /*position: absolute;*/
+    /*top: 0;*/
+    /*right: auto;*/
+    /*z-index: 2;*/
+    /*display: block;*/
+    /*width: 34px;*/
+    /*height: 34px;*/
+    /*line-height: 34px;*/
+    /*text-align: center;*/
+    /*pointer-events: none;*/
+/*}*/
+#modal-body{
+	height: 650px;
+	background-color: #FFFFFF;
+	overflow-y: scroll;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+#modal-body::-webkit-scrollbar {/*滚动条整体样式*/
+    width: 4px;     /*高宽分别对应横竖滚动条的尺寸*/
+    height: 4px;
+}
+#modal-body::-webkit-scrollbar-thumb {/*滚动条里面小方块*/
+    border-radius: 5px;
+    -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+    background: rgba(0,0,0,0.2);
+}
+#modal-body::-webkit-scrollbar-track {/*滚动条里面轨道*/
+    -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+    border-radius: 0;
+    background: rgba(0,0,0,0.1);
+}
+
+
+
+
+
+
+

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>塑宝通-登录</title>
+    <link rel="shortcut icon" type="image/x-icon" href="http://static.szplastone.com/resources/images/sbt_logo.ico" media="screen">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-responsive.css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/swiper-4.2.0.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/communicate.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/wrap.css">
+    <link rel="stylesheet" href="css/sign.css" />
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/highcharts.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/swiper-4.2.0.min.js"></script>
+    <script type="text/javascript" src="js/scroll.js"></script>
+    <script type="text/javascript" src="js/Marquee.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/m_public.js"></script>
+    <script type="text/javascript" src="js/smoothscroll.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+</head>
+
+<body>
+<!--隐藏登录框-->
+<div class="sign-box sign-box-sm">	
+	<div class="sign-info-right">
+		<i class="over_icon"></i>
+		<div class="number_title">
+			<h1>账号登录</h1>
+			<span>还没有账号？<a href="#">免费注册</a></span>
+		</div>
+		<form action="" method="post" class="user-info-box">
+			<input type="text" placeholder="手机号" class="phone"/>
+			<input type="password" placeholder="账号密码" class="password"/>
+			<p>
+				<input type="checkbox" id="myCheck">
+				<label for="myCheck"></label>
+				<span>自动登录</span>
+				<a class="forget_pw">忘记密码</a>
+			</p>    			
+			<button type="submit" class="btn_user">登录</button>
+		</form>
+	</div>  
+</div>
+</body>
+<script>
+	$(document).ready(function () {
+	 	$('.over_icon').click(function(){
+	 		$('.sign-box-sm').hide();
+	 	});
+	 	$('.btn_user').click(function(){
+	 		var phone = $('.phone').val();
+	 		var psd = $('.password').val();
+	 		if(phone == '' || phone == undefined || phone == null){
+	 			alert('请输入账号');
+	 			return false;
+	 		}
+	 		if(psd == '' || psd == undefined || psd == null){
+	 			alert('请输入密码');
+	 			return false;
+	 		}
+	 	});
+	})
+</script>
+</html>

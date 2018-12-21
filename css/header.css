@@ -1,0 +1,389 @@
+.top_box{
+	width: 100%;
+	background-color: #f4f4f4;
+}
+.loginbar{
+    height: 30px;
+    width: 1200px;
+    font-size: 13px;
+    color: #666;
+    letter-spacing:2px;
+    margin: 0 auto;
+    line-height: 30px;
+}
+.loginbar .hottel{
+    text-align: left;
+    display: inline-block;
+}
+.loginbar .login-info{
+    text-align: right;
+    display: inline-block;
+}
+.color-06{
+	position: relative;
+	height: 40px;
+	display: inline-block;
+}
+.color-06:hover .user_check{
+	display: block;
+}
+.user_check{
+    position: absolute;
+    width: 150px;
+    height: 70px;
+    z-index: 10;
+    box-shadow: 1px 1px 15px rgba(0, 0, 0, .3);
+    top: 30px;
+    left: 50%;
+    margin-left: -75px;
+    background: #fff;
+    padding: 10px;
+    font-size: 14px;
+    text-align: center;
+    line-height: 24px;
+    display: none;
+}
+.user_check:before {
+    width: 10px;
+    height: 10px;
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    background: #fff;
+    border: solid 1px #ddd;
+    border-width: 1px 1px 0 0;
+    position: absolute;
+    top: -6px;
+    right: 70px;
+    content: " ";
+}
+.loginbar .login-info a{
+    cursor: pointer;
+}
+.loginbar .login-info a:hover{
+    color: #f53838;
+}
+#phoneinfo:hover{
+    color: #f53838;
+}
+#phoneinfo:hover .mobile-link{
+    display: block;
+}
+.header-extra{
+    height: 130px;
+    width: 1200px;
+    color: #666666;
+    margin: 0 auto 12px;
+    clear: both;
+    padding-top: 20px;
+}
+.hotwords a{
+	margin-right: 10px;
+}
+.hotwords a:nth-child(1),.hotwords a:nth-child(2),.hotwords a:nth-child(3){
+	color: #ed1717;
+}
+/******LOGO*****/
+.sbt-logo-img{
+    /*width: 200px;*/
+    height: 70px;
+    float: left;
+    display: inline-block;
+    vertical-align: middle;
+}
+.sbt-logo-img img{
+	margin-right: 5px;
+}
+/******搜索*****/
+.sbt-search{
+    overflow: hidden;
+    display: inline-block;
+    /*float: left;*/
+    /*padding-left: 140px;*/
+    margin-left: 50px;
+}
+.keywords{
+    height: 25px;
+    display: block;
+    font-size: 13px;
+}
+.keywords span{
+    color: #f53838;
+    width: 60px;
+    height: 25px;
+    display: inline-block;
+    text-align: center;
+    line-height: 25px;
+}
+.keywords span.on{
+    color: #FFFFFF;
+    background: #f53838;
+}
+.sbt-search .search-box{
+    display: block;
+    height: 34px;
+}
+.sbt-search .search-box>input{
+    width: 375px;
+    height: 34px;
+    padding-left: 35px;
+    font-size: 13px;
+    border: 2px solid #f53838;
+    background-color: #ffffff;
+    color: #999999;
+    letter-spacing: 2px;
+    display: inline-block;
+    float: left;
+}
+.search-img {
+    background-image: url(../images/ic_search_grey.png);
+    background-size: 16px 16px;
+    background-position: 10px center;
+    background-repeat: no-repeat;
+}
+.sbt-search .search-btn{
+    width: 98px;
+    height: 34px;
+    background: #f53838;
+    display: inline-block;
+    color: #FFFFFF;
+    border: 0;
+    font-size: 16px;
+    float: left;
+}
+.sbt-search .hotwords{
+    display: block;
+    color: #999;
+    margin-top: 6px;
+}
+.sbt-search .hotwords>span{
+    padding-top: 5px;
+    display: inline-block;
+    letter-spacing: 1px;
+}
+/*活动*/
+.activity_box{
+	display: inline-block;
+	float: right;
+	width: 250px;
+	/*height: 75px;*/
+	background-image: url(../img/qianggou.png);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	vertical-align: middle;
+}
+.activity_box div{
+	margin: 15px 0 15px 110px;
+	color: #ffffff;
+}
+.activity_box div{
+	font-size: 14px;
+	font-weight: bold;
+}
+.activity_box div span{
+	font-size: 14px;
+	font-weight: normal;
+}
+.activity_box div:hover{
+	color: #ffffff;
+}
+/*个人中心*/
+.mt-header {
+    height: 100px;
+    background: #f53838;
+    padding: 12px 0;
+    position: relative;
+    z-index: 5;
+    border-bottom: 1px #f53838 solid;
+}
+.mt-header article {
+    width: 1200px;
+    margin: 0 auto;
+    _overflow: hidden;
+    min-width: 860px;
+}
+.mt-logo {
+    float: left;
+    position: relative;
+    overflow: hidden;
+    width: 160px;
+    height: 76px;
+}
+.mt-logo .mt-tblogo {
+    width: 160px;
+    height: 76px;
+    display: inline-block;
+    vertical-align: middle;
+    background-image: url("../images/img_logo_white.png");
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+.mt-nav {
+    float: right;
+    width: 82.4%;
+}
+.mt-nav li {
+    position: relative;
+    float: left;
+    cursor: pointer;
+    z-index: 1;
+    height: 90px;
+    font-size: 16px;
+    line-height: 80px;
+}
+.mt-nav li.site:hover .mt-nav-sub{
+    display: block;
+}
+.mt-nav li.selected .mt-arrow {
+    border-style: solid;
+    border-width: 6px;
+    font-size: 0;
+    height: 0;
+    line-height: 0;
+    position: absolute;
+    width: 0;
+    border-color: #f53838 #f53838 #fff;
+    left: 50%;
+    margin-left: -6px;
+    box-shadow: 0 1px 0 #fff;
+    bottom: 2px;
+}
+.mt-nav li a:link, .mt-nav li a:visited {
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    padding: 0 75px;
+    color: #fff;
+    display: inline-block;
+
+}
+.mt-nav .mt-nav-sub {
+    cursor: default;
+    position: absolute;
+    z-index: 3;
+    border: 1px solid #e1e1e1;
+    border-top: 0 none;
+    padding: 18px 0;
+    top: 87px;
+    left: -20px;
+    background: #fff;
+    width: 250px;
+    height: 160px;
+    box-shadow: 0 1px 2px #ddd;
+    display: none;
+}
+/*.hide {*/
+    /*display: none;*/
+/*}*/
+.mt-nav .mt-nav-sub .mt-nav-arr {
+    border-style: solid;
+    border-width: 6px;
+    font-size: 0;
+    height: 0;
+    line-height: 0;
+    position: absolute;
+    width: 0;
+    border-color: transparent transparent #fff;
+    _border-color: #ff4401 #ff4401 #fff;
+    left: 50%;
+    top: -12px;
+    margin-left: -6px;
+    box-shadow: 0 1px 0 #fff;
+    bottom: 2px;
+}
+.mt-nav .mt-nav-sub dl{
+    width: 50%;
+    float: left;
+    font-weight: normal;
+}
+.mt-nav .mt-nav-sub dl dt{
+    font-size: 16px;
+    padding-left: 38px;
+    margin-bottom: 10px;
+    font-weight: normal;
+}
+.mt-nav .mt-nav-sub dl dd{
+    font-size: 14px;
+    padding-left: 38px;
+}
+.mt-nav .mt-nav-sub dl dd p{
+    height: 30px;
+    line-height: 30px;
+    color: #666666;
+}
+.mt-nav .mt-nav-sub a:link, .mt-nav .mt-nav-sub a:visited {
+    display: block;
+    height: 30px;
+    font-weight: 400;
+    line-height: 30px;
+    padding: 0;
+    color: #666;
+    text-align: left;
+}
+.mt-nav .mt-nav-sub a:hover{
+    color: #f53838;
+}
+/*登录bar*/
+.login-bar{
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+.login-bar header{
+    width: 1200px;
+    height: 116px;
+    margin: 0 auto;
+    padding-top: 25px;
+    position: relative;
+}
+.login-bar header .logo{
+    float: left;
+    position: relative;
+    overflow: hidden;
+}
+.login-bar header .logo .sbtlogo {
+    width: 180px;
+    height: 76px;
+    display: inline-block;
+    vertical-align: middle;
+    background-image: url("../images/img_logo.png");
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+.login-bar header a{
+    color: #999;
+}
+.login-bar header a:hover{
+    text-decoration: underline;
+}
+.login-bar h4{
+    display: inline-block;
+    position: relative;
+    width: 150px;
+    height: 60px;
+    border-left: 1px solid #ddd;
+    line-height: 60px;
+    margin-top: 10px;
+    text-align: center;
+    font-weight: 400;
+    letter-spacing: 2px;
+    color: #999;
+    font-size: 26px;
+}
+.login-bar p{
+    color: #999;
+    font-size: 17px;
+    line-height: 60px;
+    letter-spacing: 1px;
+}
+
+
+
+
+
+
+
+
+
+
+

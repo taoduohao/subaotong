@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>商品详情</title>
+    <link rel="shortcut icon" type="image/x-icon" href="http://static.szplastone.com/resources/images/sbt_logo.ico" media="screen">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-responsive.css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/swiper-4.2.0.min.css">
+    <link rel="stylesheet" href="css/jedate.css" />
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/communicate.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/wrap.css">
+    <link rel="stylesheet" href="css/sign.css">
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/highcharts.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/swiper-4.2.0.min.js"></script>
+    <script type="text/javascript" src="js/scroll.js"></script>
+    <script type="text/javascript" src="js/jedate.js" ></script>
+    <script type="text/javascript" src="js/Marquee.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/m_public.js"></script>
+    <script type="text/javascript" src="js/smoothscroll.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+</head>
+
+<body onscroll="scroll()">
+    <!--头部公司公共栏-->
+    <div class="top_box">
+        <div class="loginbar" id="TOP">
+            <p class="hottel left">
+                交易时间（工作日）09:00-17:30 | 客服热线 0755-29236655
+            </p>
+            <div class="login-info right">
+                <span id="login-info">
+                    欢迎您！
+                    <span class='color-06'>
+                        <span style='color: #f53838;'>李白白不白</span>
+                        <ul class="user_check">
+                            <li>
+                                <a href="manage.html">个人中心</a>
+                            </li>
+                            <li>
+                                <a href="#">切换状态</a>
+                            </li>
+                        </ul>
+                    </span>
+                    <a href='loginout.html'>退出</a> |
+                    <a href='manage/msg.html'>我的消息
+                        <span id='topMsg'></span>
+                    </a>
+                </span>
+                <span id="phoneinfo" class="dissy">
+                    <i class="fa fa-mobile fa-1x" aria-hidden="true"></i>手机塑宝通
+                    <i class="fa fa-angle-down"></i>
+                    <div class="mobile-link">
+                        <img src="img/sbt_wechat public_qr.png">
+                    </div>
+                </span>
+            </div>
+        </div>
+    </div>
+    <div class="login-line"></div>
+    <!--搜索-->
+    <div class="header-extra">
+        <div class="sbt-logo-img">
+            <a href="http://www.szplastone.com/index.html" class="on">
+                <img src="img/img_logo.png">
+                <img src="img/logobianziti.png">
+            </a>
+        </div>
+        <div class="sbt-search">
+            <div class="keywords">
+                <span class="on" id="product">产品</span>
+                <span id="shop">店铺</span>
+            </div>
+            <div class="search-box">
+                <input type="text" class="search-img" id="searchInput" placeholder="请输入关键词">
+                <button type="button" class="search-btn" onclick="plas_public.search()">搜索</button>
+            </div>
+            <div class="hotwords">
+                热门搜索：
+                <a href="http://www.szplastone.com/product.html?word=3015">
+                    <span>3015</span>
+                </a>
+                <a href="http://www.szplastone.com/product.html?word=PP">
+                    <span>PP</span>
+                </a>
+                <a href="http://www.szplastone.com/product.html?word=ASA%E8%83%B6%E7%B2%89">
+                    <span>ASA胶粉</span>
+                </a>
+                <a href="http://www.szplastone.com/product.html?word=%E5%8F%B0%E6%B9%BE%E5%8F%B0%E5%8C%96">
+                    <span>台湾台化</span>
+                </a>
+                <a href="http://www.szplastone.com/product.html?word=5090T">
+                    <span>5090T</span>
+                </a>
+                <a href="http://www.szplastone.com/product.html?word=%E5%A1%91%E5%AE%9D%E9%80%9A%E6%96%B0%E6%9D%90%E6%96%99">
+                    <span>塑宝通新材料</span>
+                </a>
+            </div>
+        </div>
+        <div class="activity_box">
+            <a>
+                <div>
+                    <span>阿科玛PMMA</span>
+                    <br/>秒杀价99.8
+                </div>
+            </a>
+        </div>
+    </div>
+    <!--导航栏-->
+    <div class="main-nav inner-con0-slider">
+        <div class="inner-con0">
+            <div class="inner-con1">
+                <div class="inner-con2">
+                    <a href="#" target="_blank">首页</a>
+                    <a href="#" target="_blank">特卖专区</a>
+                    <a href="#" target="_blank" class="on">全部商品</a>
+                    <a href="#" target="_blank">全部商家</a>
+                    <a href="#" target="_blank">采购指南</a>
+                    <a href="#" target="_blank">合伙人招募</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--中间内容-->
+    <div id="content">
+        <div class="layout-nav">
+            <div class="grid-con">
+                <span class="scree-h4-m1 ">
+                    <span class="color-333">
+                        <a href="http://www.szplastone.com/index.html">首页</a>
+                    </span> &gt;
+                    <span class="color-333">
+                        <a href="http://www.szplastone.com/product.html" class="on">全部报价</a>
+                    </span> &gt;
+                    <span class="color-333">商品详情</span>
+                </span>
+            </div>
+        </div>
+        <!--商品详情-->
+        <div class="por_box">
+	        <div class="product-main">
+	            <div class="p-inner">
+	                <div class="p-con">
+	                    <h1>PMMA V150 阿科玛</h1>
+	                    <p>单价：<span class="p-price">￥28600.0</span><span>元/吨</span></p>
+	                </div>
+	                <div class="p-con-2">
+	                    <span class="br-right">
+	                        <img src="./img/icon_maoyi.png"> 贸易方式：国内 </span>
+	                    <span class="br-right">
+	                        <img src="./img/icon_jiesuan.png"> 结算方式：B2B</span>
+	                    <span>
+	                        <img src="./img/icon_jiaoghuo.png"> 交货时间：现货 </span>
+	                </div>
+	                <div class="p-con-3">
+						<ul>
+							<li><span>【原厂包装标准】</span>KG/包</li>
+							<li><span>【包装袋材质】</span>纸袋，桶装</li>
+							<li><span>【供应量】</span>吨，散货</li>
+							<li><span>【交货地】</span>广东  东莞（详细交易地址由供应方确定）</li>
+							<li><span>【交易货款保障】</span>线下结算</li>
+							<li><span>【最低交易量】</span>线下结算</li>
+							<li><span>【票据类别】</span>16%增值税发票</li>
+							<li><span>【是否允许还价】</span>是</li>
+						</ul>
+						<div class="p-edit">
+					        <span>数量</span>
+					        <div class="p-con-4"> 
+					          <button id="less" class="p-btn">-</button>
+					          <input id="num" value="1" class="pri-input" type="text" placeholder="1">
+					          <input id="inventory" type="hidden" value="1.0">
+					          <button id="add" class="p-btn">+</button> 
+					        </div>
+					        库存：1.0 吨
+					        <p class="num_error">商品数量超过库存！</p>
+					    </div>
+	               </div>
+	                <div class="p-con-5">
+	                    <button class="btn-coll"><i><img src="img/icon_jiaoliu.png"/></i>还价</button>
+	                    <button class="btn-buyer"><i><img src="img/icon_gouwu.png"/></i>下单</button>
+	                    <span>（交易时间：09:00至18：00）</span>
+	                </div>
+	            </div>
+	            <div class="p-inner-s2">
+	                <div class="head-top">
+	                    <img src="img/wutu20180403140916.png">
+	                    <h2>塑宝通自营<span>郑光明</span></h2>
+	                </div>
+	                <div class="p-inner-in2">
+	                    <p class="first-child">主营：
+	                        <span>ABS ASA ASA高胶粉 GPPS HIPS PC/ABS PET PMMA PP 抗氧剂 </span>
+	                    </p>
+	                    <p>总销量：
+	                        <span>0.0吨</span>
+	                    </p>
+	                </div>
+	                <div class="p-inner-in2">
+	                    <p>电话：
+	                        <span>15920037604</span>
+	                    </p>
+	                    <p>邮箱：
+	                        <span>417028082@qq.com</span>
+	                    </p>
+	                    <p>QQ：
+	                        <span></span>
+	                    </p>
+	                </div>
+	                <button class="btn-shop"><i><img src="img/icon_dianpu.png"></i>进入店铺</button>
+	            </div>
+	        </div>
+        </div>
+    </div>
+    <!--还价-->
+    <div class="counter-offer">
+    	<h1>您的还盘</h1>
+    	<a class="over_btn">×</a>
+    	<div class="counter-box">
+    		<ul class="counter-up">
+    			<li>供应量：<span>15.0</span>吨</li>
+    			<li>单价：<span>17000.0</span>元/吨</li>
+    			<li>结算方式：<span>B2B（企业对公账号结算）</span></li>
+    			<li>交货地：<span>广州</span><i>详细交货地由供应商确定</i></li>
+    			<li>起订量：<span>1.0</span></li>
+    		</ul>
+    		<form class="layui-form" action="">
+    			<ul class="counter-down">
+	    			<li>
+	    				<span>交货贷款保障：</span>
+						<label><input type="radio" name="type" checked><span></span>银行监管</label>
+						<label><input type="radio" name="type"><span></span>银行监管</label>
+	    			</li>
+	    			<li class="k_price">
+	    				<label>
+	    					<span>还盘价格：</span>
+	    					<input type="number" name="price">元/吨
+	    				</label>
+	    				<b class="tooltips">请填写正确的价格</b>
+	    			</li>
+	    			<li class="k_num">
+	    				<span>还盘数量：</span>
+	    				<input type="number" class="num" name="num">吨
+	    				<b class="tooltips">请填写正确的数量</b>
+	    			</li>
+	    			<li>
+	    				<span>还盘交货地：</span>
+	    				<label><input type="radio" name="address" value="1" checked><span></span>地区</label>
+	    				<select>
+	    					<option>广东</option>
+	    				</select>
+	    				<select>
+	    					<option>广州</option>
+	    					<option>深圳</option>
+	    					<option>东莞</option>
+	    				</select>
+	    				<i>详细交货地由供应方确定</i>
+	    			</li>
+	    			<li  class="k_date">
+	    				<label>
+	    					<span>还盘截止时间：</span>
+			                <div class="jeinpbox">
+			                    <input type="text" class="jeinput" id="testico" name="date" readonly>
+			                    <div class="icons jebtns" onclick="jeDate('#testico',{trigger:false,format: 'YYYY-MM-DD'})"></div>
+			                </div>
+	    				</label>
+	    				<b class="tooltips">请填写正确的时间</b>
+	    			</li>
+	    			<li class="k_company">
+	    				<span>公司信息：</span>
+	    				<label>
+	    					<input type="text" name="company" placeholder="" readonly id="company_str">
+	    					<ul class="company_list">
+	    						<li>
+	    							<span class="com_name">百度</span>
+	    							<span class="c_name">李彦宏</span>
+	    							<span class="com_phone">13088888888</span>
+	    						</li>
+	    						<li>
+	    							<span class="com_name">腾讯</span>
+	    							<span class="c_name">马化腾</span>
+	    							<span class="com_phone">13066666666</span>
+	    						</li>
+	    						<li>
+	    							<span class="com_name">阿里巴巴</span>
+	    							<span class="c_name">马云</span>
+	    							<span class="com_phone">13099999999</span>
+	    						</li>
+	    					</ul>
+	    				</label>
+	    			</li>
+	    		</ul>
+    			<input type="button" value="还价" class="sub_counter"/><input type="button" value="取消" class="over_btns"/>
+    		</form>
+    		
+    	</div>
+    </div>
+    <!--页脚-->
+    <div class="footer-line">
+    </div>
+    <div class="footer-con1">
+        <div class="con1-inner">
+            <div class="con1-inner-ensure">
+                <img src="img/ic_pinzhi.png">
+                <p>品质保证 原装原厂</p>
+            </div>
+            <div class="con1-inner-ensure">
+                <img src="img/ic_wuliu.png">
+                <p>极速物流 极速送达</p>
+            </div>
+            <div class="con1-inner-ensure">
+                <img src="img/ic_fuwu.png">
+                <p>精致服务 售后无忧</p>
+            </div>
+            <div class="con1-inner-ensure">
+                <img src="img/ic_bangzhu.png">
+                <p>帮助中心 购物指南</p>
+            </div>
+        </div>
+    </div>
+    <div class="footer-con2">
+        <div class="con2-inner">
+            <dl class="con2-inner-desc">
+                <dt>
+                    <span>新手指南</span>
+                </dt>
+                <dd>
+                    <a href="http://www.szplastone.com/about.html" target="_blank">关于我们</a>
+                    <a href="http://www.szplastone.com/agreement.html" target="_blank">服务协议</a>
+                    <a href="http://www.szplastone.com/statement" target="_blank">法律声明</a>
+                </dd>
+            </dl>
+            <dl class="con2-inner-desc">
+                <dt>
+                    <span>如何购买</span>
+                </dt>
+                <dd>
+                    <a href="http://www.szplastone.com/buyer.html" target="_blank">采购流程</a>
+                    <a href="http://www.szplastone.com/payment.html" target="_blank">支付说明</a>
+                    <a href="http://www.szplastone.com/transport.html" target="_blank">物流说明</a>
+                </dd>
+            </dl>
+            <dl class="con2-inner-desc">
+                <dt>
+                    <span>服务支持</span>
+                </dt>
+                <dd>
+                    <a href="http://www.szplastone.com/enter.html" target="_blank">入驻说明</a>
+                    <a href="http://www.szplastone.com/contact.html" target="_blank">联系我们</a>
+                    <a href="http://www.szplastone.com/billing.html" target="_blank">开票说明</a>
+
+                </dd>
+            </dl>
+            <dl class="con2-inner-desc">
+                <dt>
+                    <span>推荐产品</span>
+                </dt>
+                <dd>
+                    <a>塑宝金融</a>
+                    <a>检测服务</a>
+                    <a>仓储服务</a>
+                </dd>
+            </dl>
+            <div class="tel">
+                <p class="tel-text">0755-29236655</p>
+                <p>周一至周五9:00-17:30</p>
+                <p>地址：广东省深圳市宝安区松岗镇东方立业路兆丰祥商务大厦1219</p>
+                <p>邮箱：plastone@126.com</p>
+            </div>
+            <div class="qr-code">
+                <ul>
+                    <li>
+                        <img src="img/sbt_wechat public_qr.png">
+                        <p>关注公众账号</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer-con3">
+        <div class="con3-inner">
+            <div class="copyright">
+                <div class="copy-text">
+                    <a href="http://www.szplastone.com/about.html" target="_blank">关于我们</a>|
+                    <a href="http://www.szplastone.com/news.html" target="_blank">新闻资讯</a>|
+                    <a href="http://www.szplastone.com/enter.html" target="_blank">入驻说明</a>|
+                    <a href="http://www.szplastone.com/contact.html" target="_blank">联系我们</a>|
+                    <a href="http://www.szplastone.com/statement" target="_blank">法律声明</a>
+                </div>
+                <div class="copy">
+                    Copyright © 2015-2017 All Rights Reserved. 粤ICP备15009714号-1
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+<script>
+	function scroll(){
+        $('#jedate').hide();
+    }
+</script>
+</html>

@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>新手指南</title>
+    <link rel="shortcut icon" type="image/x-icon" href="http://static.szplastone.com/resources/images/sbt_logo.ico" media="screen">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-responsive.css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/swiper-4.2.0.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/communicate.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/wrap.css">
+    <link rel="stylesheet" href="css/sign.css" />
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/highcharts.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/swiper-4.2.0.min.js"></script>
+    <script type="text/javascript" src="js/scroll.js"></script>
+    <script type="text/javascript" src="js/Marquee.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/m_public.js"></script>
+    <script type="text/javascript" src="js/smoothscroll.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <style>
+    	.new_box .img-box{
+			width: 100%;
+			background-repeat: no-repeat;
+			background-position: center center;
+			background-size: auto 100%;
+		}
+		.new_box .img-box:nth-child(1){
+			height: 922px;
+			background-image:url(img/xinshou_02.jpg);
+		}
+		.new_box .img-box:nth-child(2){
+			height: 1079px;
+			background-image:url(img/xinshou_03.jpg);
+		}
+		.new_box .img-box:nth-child(3){
+			height: 1080px;
+			background-image:url(img/xinshou_04.jpg);
+		}
+		.new_box .img-box:nth-child(4){
+			height: 1080px;
+			background-image:url(img/xinshou_05.jpg);
+		}
+		.new_box .img-box:nth-child(5){
+			height: 1080px;
+			background-image:url(img/xinshou_06.jpg);
+		}
+		.new_box .img-box:nth-child(6){
+			height: 942px;
+			background-image:url(img/xinshou_07.jpg);
+		}
+		.start_zq{
+			width: 100%;
+			height: 100%;
+			display: inline-block;
+		}
+    </style>
+</head>
+
+<body>
+	<!--头部公司公共栏-->
+    <div class="top_box">
+        <div class="loginbar" id="TOP">
+            <p class="hottel left">
+                交易时间（工作日）09:00-17:30 | 客服热线 0755-29236655
+            </p>
+            <div class="login-info right">
+                <span id="login-info">
+                    <a href="http://www.szplastone.com/reg.html">立即注册</a> |
+                    <a href="http://www.szplastone.com/login.html">直接登录</a>
+                </span>
+                <span id="phoneinfo" class="dissy">
+                    <i class="fa fa-mobile fa-1x" aria-hidden="true"></i>手机塑宝通
+                    <i class="fa fa-angle-down"></i>
+                    <div class="mobile-link">
+                        <img src="img/sbt_wechat public_qr.png">
+                    </div>
+                </span>
+            </div>
+        </div>
+    </div>
+    <div class="login-line"></div>
+    <!--搜索-->
+    <div class="header-extra">
+        <div class="sbt-logo-img">
+            <a href="http://www.szplastone.com/index.html" class="on">
+                <img src="img/img_logo.png">
+                <img src="img/logobianziti.png">
+            </a>
+        </div>
+        <div class="sbt-search">
+            <div class="keywords">
+                <span class="on" id="product">产品</span>
+                <span id="shop">店铺</span>
+            </div>
+            <div class="search-box">
+                <input type="text" class="search-img" id="searchInput" placeholder="请输入关键词">
+                <button type="button" class="search-btn" onclick="plas_public.search()">搜索</button>
+            </div>
+            <div class="hotwords">
+                热门搜索：
+                <a href="http://www.szplastone.com/product.html?word=3015">
+                    <span>3015</span>
+                </a>
+                <a href="http://www.szplastone.com/product.html?word=PP">
+                    <span>PP</span>
+                </a>
+                <a href="http://www.szplastone.com/product.html?word=ASA%E8%83%B6%E7%B2%89">
+                    <span>ASA胶粉</span>
+                </a>
+                <a href="http://www.szplastone.com/product.html?word=%E5%8F%B0%E6%B9%BE%E5%8F%B0%E5%8C%96">
+                    <span>台湾台化</span>
+                </a>
+                <a href="http://www.szplastone.com/product.html?word=5090T">
+                    <span>5090T</span>
+                </a>
+                <a href="http://www.szplastone.com/product.html?word=%E5%A1%91%E5%AE%9D%E9%80%9A%E6%96%B0%E6%9D%90%E6%96%99">
+                    <span>塑宝通新材料</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!--导航栏-->
+    <div class="main-nav inner-con0-slider">
+        <div class="inner-con0">
+            <div class="inner-con1">
+                <div class="inner-con2">
+                    <a href="#" target="_blank">首页</a>
+                    <a href="#" target="_blank">特卖专区</a>
+                    <a href="#" target="_blank">全部商品</a>
+                    <a href="#" target="_blank">全部商家</a>
+                    <a href="#" target="_blank">采购指南</a>
+                    <a href="#" target="_blank">合伙人招募</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="new_box">
+    	<div class="img-box"></div>
+        <div class="img-box"></div>
+        <div class="img-box"></div>
+        <div class="img-box"></div>
+        <div class="img-box"></div>
+        <div class="img-box"><a href="#" class="start_zq"></a></div>
+    </div>
+    <div class="footer-line">
+    </div>
+    <div class="footer-con1">
+        <div class="con1-inner">
+            <div class="con1-inner-ensure">
+                <img src="img/ic_pinzhi.png">
+                <p>品质保证 原装原厂</p>
+            </div>
+            <div class="con1-inner-ensure">
+                <img src="img/ic_wuliu.png">
+                <p>极速物流 极速送达</p>
+            </div>
+            <div class="con1-inner-ensure">
+                <img src="img/ic_fuwu.png">
+                <p>精致服务 售后无忧</p>
+            </div>
+            <div class="con1-inner-ensure">
+                <img src="img/ic_bangzhu.png">
+                <p>帮助中心 购物指南</p>
+            </div>
+        </div>
+    </div>
+    <div class="footer-con2">
+        <div class="con2-inner">
+            <dl class="con2-inner-desc">
+                <dt>
+                    <span>新手指南</span>
+                </dt>
+                <dd>
+                    <a href="http://www.szplastone.com/about.html" target="_blank">关于我们</a>
+                    <a href="http://www.szplastone.com/agreement.html" target="_blank">服务协议</a>
+                    <a href="http://www.szplastone.com/statement" target="_blank">法律声明</a>
+                </dd>
+            </dl>
+            <dl class="con2-inner-desc">
+                <dt>
+                    <span>如何购买</span>
+                </dt>
+                <dd>
+                    <a href="http://www.szplastone.com/buyer.html" target="_blank">采购流程</a>
+                    <a href="http://www.szplastone.com/payment.html" target="_blank">支付说明</a>
+                    <a href="http://www.szplastone.com/transport.html" target="_blank">物流说明</a>
+                </dd>
+            </dl>
+            <dl class="con2-inner-desc">
+                <dt>
+                    <span>服务支持</span>
+                </dt>
+                <dd>
+                    <a href="http://www.szplastone.com/enter.html" target="_blank">入驻说明</a>
+                    <a href="http://www.szplastone.com/contact.html" target="_blank">联系我们</a>
+                    <a href="http://www.szplastone.com/billing.html" target="_blank">开票说明</a>
+
+                </dd>
+            </dl>
+            <dl class="con2-inner-desc">
+                <dt>
+                    <span>推荐产品</span>
+                </dt>
+                <dd>
+                    <a>塑宝金融</a>
+                    <a>检测服务</a>
+                    <a>仓储服务</a>
+                </dd>
+            </dl>
+            <div class="tel">
+                <p class="tel-text">0755-29236655</p>
+                <p>周一至周五9:00-17:30</p>
+                <p>地址：广东省深圳市宝安区松岗镇东方立业路兆丰祥商务大厦1219</p>
+                <p>邮箱：plastone@126.com</p>
+            </div>
+            <div class="qr-code">
+                <ul>
+                    <li>
+                        <img src="img/sbt_wechat public_qr.png">
+                        <p>关注公众账号</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer-con3">
+        <div class="con3-inner">
+            <div class="copyright">
+                <div class="copy-text">
+                    <a href="http://www.szplastone.com/about.html" target="_blank">关于我们</a>|
+                    <a href="http://www.szplastone.com/news.html" target="_blank">新闻资讯</a>|
+                    <a href="http://www.szplastone.com/enter.html" target="_blank">入驻说明</a>|
+                    <a href="http://www.szplastone.com/contact.html" target="_blank">联系我们</a>|
+                    <a href="http://www.szplastone.com/statement" target="_blank">法律声明</a>
+                </div>
+                <div class="copy">
+                    Copyright © 2015-2017 All Rights Reserved. 粤ICP备15009714号-1
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

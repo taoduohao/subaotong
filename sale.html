@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>特卖会</title>
+    <link rel="shortcut icon" type="image/x-icon" href="http://static.szplastone.com/resources/images/sbt_logo.ico" media="screen">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-responsive.css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/swiper-4.2.0.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/communicate.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/wrap.css">
+    <link rel="stylesheet" href="css/sign.css" />
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/highcharts.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/swiper-4.2.0.min.js"></script>
+    <script type="text/javascript" src="js/scroll.js"></script>
+    <script type="text/javascript" src="js/leftTime.min.js" ></script>
+    <script type="text/javascript" src="js/Marquee.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/m_public.js"></script>
+    <script type="text/javascript" src="js/smoothscroll.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+</head>
+
+<body>
+    <!--头部公司公共栏-->
+    <div class="top_box">
+        <div class="loginbar" id="TOP">
+            <p class="hottel left">
+                交易时间（工作日）09:00-17:30 | 客服热线 0755-29236655
+            </p>
+            <div class="login-info right">
+                <span id="login-info">
+                    <a href="http://www.szplastone.com/reg.html">立即注册</a> |
+                    <a href="http://www.szplastone.com/login.html">直接登录</a>
+                </span>
+                <span id="phoneinfo" class="dissy">
+                    <i class="fa fa-mobile fa-1x" aria-hidden="true"></i>手机塑宝通
+                    <i class="fa fa-angle-down"></i>
+                    <div class="mobile-link">
+                        <img src="img/sbt_wechat public_qr.png">
+                    </div>
+                </span>
+            </div>
+        </div>
+    </div>
+    <div class="login-line"></div>
+    <!--搜索-->
+    <div class="header-extra">
+        <div class="sbt-logo-img">
+            <a href="http://www.szplastone.com/index.html" class="on">
+                <img src="img/img_logo.png">
+                <img src="img/logobianziti.png">
+            </a>
+        </div>
+        <div class="sbt-search">
+            <div class="keywords">
+                <span class="on" id="product">产品</span>
+                <span id="shop">店铺</span>
+            </div>
+            <div class="search-box">
+                <input type="text" class="search-img" id="searchInput" placeholder="请输入关键词">
+                <button type="button" class="search-btn" onclick="plas_public.search()">搜索</button>
+            </div>
+            <div class="hotwords">
+                热门搜索：
+                <a href="http://www.szplastone.com/product.html?word=3015">
+                    <span>3015</span>
+                </a>
+                <a href="http://www.szplastone.com/product.html?word=PP">
+                    <span>PP</span>
+                </a>
+                <a href="http://www.szplastone.com/product.html?word=ASA%E8%83%B6%E7%B2%89">
+                    <span>ASA胶粉</span>
+                </a>
+                <a href="http://www.szplastone.com/product.html?word=%E5%8F%B0%E6%B9%BE%E5%8F%B0%E5%8C%96">
+                    <span>台湾台化</span>
+                </a>
+                <a href="http://www.szplastone.com/product.html?word=5090T">
+                    <span>5090T</span>
+                </a>
+                <a href="http://www.szplastone.com/product.html?word=%E5%A1%91%E5%AE%9D%E9%80%9A%E6%96%B0%E6%9D%90%E6%96%99">
+                    <span>塑宝通新材料</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!--导航栏-->
+    <div class="main-nav inner-con0-slider">
+        <div class="inner-con0">
+            <div class="inner-con1">
+                <div class="inner-con2">
+                    <a href="#" target="_blank">首页</a>
+                    <a href="#" target="_blank">特卖专区</a>
+                    <a href="#" target="_blank">全部商品</a>
+                    <a href="#" target="_blank">全部商家</a>
+                    <a href="#" target="_blank">采购指南</a>
+                    <a href="#" target="_blank">合伙人招募</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="temai_box">
+    	<div class="img-box"><a href="#"></a></div>
+        <div class="img-box">
+            <div class="kaichang">
+            	<div class="kc_info">
+            		<div class="left_img time_djs">
+            			<!--<img src="img/cailiao_img.png" />-->
+            			<div class="banner-con">
+		                    <div id="myCarousel01" class="carousel slide myCarousel">
+		                        <ol class="carousel-indicators">
+		                            <li data-target="#myCarousel01" data-slide-to="0" class="active"></li>
+		                            <li data-target="#myCarousel01" data-slide-to="1"></li>
+		                        </ol>
+		                        <div class="carousel-inner">
+		                            <div class="active item">
+		                                <img src="img/cailiao_img.png" />
+		                            </div>
+		                            <div class="item">
+		                                <img src="img/cailiao_img.png" />
+		                            </div>
+		                        </div>
+		                        <a class="carousel-control carousel-controls left" href="http://www.szplastone.com/#myCarousel01" data-slide="prev"><img src="img/left_btn.png"/></a>
+		                        <a class="carousel-control carousel-controls right" href="http://www.szplastone.com/#myCarousel01" data-slide="next"><img src="img/right_btn.png"/></a>
+		                    </div>
+		                </div>
+            			<p>秒杀倒计时<span class="d">00</span>天<span class="h">00</span>时<span class="m">00</span>分<span class="s">00</span>秒</p>
+            		</div>
+            		<div class="right_info">
+            			<h1>阿科玛PMMA/V040阿科玛PMMA/V040阿科玛PMMA/V040</h1>
+            			<p class="temai_num">特卖总量：<span>100.0吨</span>剩余总量：<span>98.0吨</span></p>
+            			<div class="temai_info_js">
+            				<p>类&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;型：标准料</p>
+            				<p>颜&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;色：透明</p>
+            				<p>用&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;途：照明灯具，汽车部件，电子电器部件等</p>
+            				<p>加工级别：注塑级，挤出级，吹塑级</p>
+            				<p>特性级别：透明级，耐磨，耐高温，高流动性</p>
+            				<p>用途级别：板材级，照明灯具，汽车部件，电子电器部件，运动器材等</p>
+            			</div>
+            			<p class="temai_new_num">特卖价：<span>5400元/吨</span></p>
+            			<button class="buy_btn">立即购买</button>
+            		</div>
+            	</div>
+            	<div class="kc_info">
+            		<div class="left_img time_djs">
+            			<div class="banner-con">
+		                    <div id="myCarousel02" class="carousel slide myCarousel">
+		                        <ol class="carousel-indicators">
+		                            <li data-target="#myCarousel02" data-slide-to="0" class="active"></li>
+		                            <li data-target="#myCarousel02" data-slide-to="1"></li>
+		                        </ol>
+		                        <div class="carousel-inner">
+		                            <div class="active item">
+		                                <img src="img/cailiao_img.png" />
+		                            </div>
+		                            <div class="item">
+		                                <img src="img/cailiao_img.png" />
+		                            </div>
+		                        </div>
+		                        <a class="carousel-control carousel-controls left" href="http://www.szplastone.com/#myCarousel02" data-slide="prev"><img src="img/left_btn.png"/></a>
+		                        <a class="carousel-control carousel-controls right" href="http://www.szplastone.com/#myCarousel02" data-slide="next"><img src="img/right_btn.png"/></a>
+		                    </div>
+		                </div>
+            			<p>秒杀倒计时<span class="d">00</span>天<span class="h">00</span>时<span class="m">00</span>分<span class="s">00</span>秒</p>
+            		</div>
+            		<div class="right_info">
+            			<h1>阿科玛PMMA/V040</h1>
+            			<p class="temai_num">特卖总量：<span>100.0吨</span>剩余总量：<span>98.0吨</span></p>
+            			<div class="temai_info_js">
+            				<p>类&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;型：标准料</p>
+            				<p>颜&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;色：透明</p>
+            				<p>用&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;途：照明灯具，汽车部件，电子电器部件等</p>
+            				<p>加工级别：注塑级，挤出级，吹塑级</p>
+            				<p>特性级别：透明级，耐磨，耐高温，高流动性</p>
+            				<p>用途级别：板材级，照明灯具，汽车部件，电子电器部件，运动器材等</p>
+            			</div>
+            			<p class="temai_new_num">特卖价：<span>5400元/吨</span></p>
+            			<button class="buy_btn">立即购买</button>
+            		</div>
+            	</div>
+            	<div class="kc_info">
+            		<div class="left_img time_djs">
+            			<div class="banner-con">
+		                    <div id="myCarousel03" class="carousel slide myCarousel">
+		                        <ol class="carousel-indicators">
+		                            <li data-target="#myCarousel03" data-slide-to="0" class="active"></li>
+		                            <li data-target="#myCarousel03" data-slide-to="1"></li>
+		                        </ol>
+		                        <div class="carousel-inner">
+		                            <div class="active item">
+		                                <img src="img/cailiao_img.png" />
+		                            </div>
+		                            <div class="item">
+		                                <img src="img/cailiao_img.png" />
+		                            </div>
+		                        </div>
+		                        <a class="carousel-control carousel-controls left" href="http://www.szplastone.com/#myCarousel03" data-slide="prev"><img src="img/left_btn.png"/></a>
+		                        <a class="carousel-control carousel-controls right" href="http://www.szplastone.com/#myCarousel03" data-slide="next"><img src="img/right_btn.png"/></a>
+		                    </div>
+		                </div>
+            			<p>秒杀倒计时<span class="d">00</span>天<span class="h">00</span>时<span class="m">00</span>分<span class="s">00</span>秒</p>
+            		</div>
+            		<div class="right_info">
+            			<h1>阿科玛PMMA/V040</h1>
+            			<p class="temai_num">特卖总量：<span>100.0吨</span>剩余总量：<span>98.0吨</span></p>
+            			<div class="temai_info_js">
+            				<p>类&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;型：标准料</p>
+            				<p>颜&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;色：透明</p>
+            				<p>用&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;途：照明灯具，汽车部件，电子电器部件等</p>
+            				<p>加工级别：注塑级，挤出级，吹塑级</p>
+            				<p>特性级别：透明级，耐磨，耐高温，高流动性</p>
+            				<p>用途级别：板材级，照明灯具，汽车部件，电子电器部件，运动器材等</p>
+            			</div>
+            			<p class="temai_new_num">特卖价：<span>5400元/吨</span></p>
+            			<button class="buy_btn">立即购买</button>
+            		</div>
+            	</div>
+            	<div class="kc_info">
+            		<div class="left_img time_djs">
+            			<div class="banner-con">
+		                    <div id="myCarousel04" class="carousel slide myCarousel">
+		                        <ol class="carousel-indicators">
+		                            <li data-target="#myCarousel04" data-slide-to="0" class="active"></li>
+		                            <li data-target="#myCarousel04" data-slide-to="1"></li>
+		                        </ol>
+		                        <div class="carousel-inner">
+		                            <div class="active item">
+		                                <img src="img/cailiao_img.png" />
+		                            </div>
+		                            <div class="item">
+		                                <img src="img/cailiao_img.png" />
+		                            </div>
+		                        </div>
+		                        <a class="carousel-control carousel-controls left" href="http://www.szplastone.com/#myCarousel04" data-slide="prev"><img src="img/left_btn.png"/></a>
+		                        <a class="carousel-control carousel-controls right" href="http://www.szplastone.com/#myCarousel04" data-slide="next"><img src="img/right_btn.png"/></a>
+		                    </div>
+		                </div>
+            			<p>秒杀倒计时<span class="d">00</span>天<span class="h">00</span>时<span class="m">00</span>分<span class="s">00</span>秒</p>
+            		</div>
+            		<div class="right_info">
+            			<h1>阿科玛PMMA/V040</h1>
+            			<p class="temai_num">特卖总量：<span>100.0吨</span>剩余总量：<span>98.0吨</span></p>
+            			<div class="temai_info_js">
+            				<p>类&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;型：标准料</p>
+            				<p>颜&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;色：透明</p>
+            				<p>用&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;途：照明灯具，汽车部件，电子电器部件等</p>
+            				<p>加工级别：注塑级，挤出级，吹塑级</p>
+            				<p>特性级别：透明级，耐磨，耐高温，高流动性</p>
+            				<p>用途级别：板材级，照明灯具，汽车部件，电子电器部件，运动器材等</p>
+            			</div>
+            			<p class="temai_new_num">特卖价：<span>5400元/吨</span></p>
+            			<button class="buy_btn">立即购买</button>
+            		</div>
+            		<!--灰色覆盖层-->
+            		<div class="sold_out">
+            			<img src="img/miaoguang.png" />
+            		</div> 
+            	</div>
+            </div>
+        </div>
+        <div class="img-box">
+            <div class="next_seckill">
+            	<ul class="seckill_day">
+            		<li class="active"><a href="#">4月19日</a></li>
+            		<li><a href="#">4月20日</a></li>
+            		<li><a href="#">4月21日</a></li>
+            		<li><a href="#">4月22日</a></li>
+            		<li><a href="#">4月23日</a></li>
+            	</ul>
+            	<div class="next_info">
+	            	<div class="left_img">
+	        			<img src="img/cailiao_img.png" />
+	        		</div>
+	        		<div class="right_info">
+	        			<h1>台化ASA/WE8100</h1>
+	        			<p class="temai_num">特卖总量：<span>100.0吨</span>剩余总量：<span>98.0吨</span></p>
+	        			<div class="temai_info_js">
+	        				<p>类&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;型：标准料</p>
+	        				<p>颜&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;色：透明</p>
+	        				<p>用&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;途：照明灯具，汽车部件，电子电器部件等</p>
+	        				<p>加工级别：注塑级，挤出级，吹塑级</p>
+	        				<p>特性级别：透明级，耐磨，耐高温，高流动性</p>
+	        				<p>用途级别：板材级，照明灯具，汽车部件，电子电器部件，运动器材等</p>
+	        			</div>
+	        			<p class="temai_new_num">特卖价：<span>5400元/吨</span></p>
+	        			<button class="buy_btn">明日10点开抢</button>
+	        		</div>
+	        		<!--灰色覆盖层-->
+	        		<div class="sold_out">
+	        			<img src="img/choubei-big.png" />
+	        		</div>
+        		</div> 
+        		<div class="row-fluid next_sm_box">
+                    <div class="span4">
+                    	<img src="img/cailiao_img02.png" />
+                    	<p>台化AS/NF2100</p>
+                    	<p>类&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;型：标准料</p>
+                    	<p>加工级别：注塑级</p>
+                    	<p class="temai_new_num">￥<span>6100元/吨</span></p>
+                    	<button class="buy_btn">明日10点开抢</button>
+                    	<!--灰色覆盖层-->
+		        		<div class="sold_out">
+		        			<img src="img/choubei-sm.png" />
+		        		</div>
+                    </div>
+                    <div class="span4">
+                    	<img src="img/cailiao_img02.png" />
+                    	<p>台化AS/NF2100</p>
+                    	<p>类&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;型：标准料</p>
+                    	<p>加工级别：注塑级</p>
+                    	<p class="temai_new_num">￥<span>6100元/吨</span></p>
+                    	<button class="buy_btn">明日10点开抢</button>
+                    	<!--灰色覆盖层-->
+		        		<div class="sold_out">
+		        			<img src="img/choubei-sm.png" />
+		        		</div>
+                    </div>
+                    <div class="span4">
+                    	<img src="img/cailiao_img02.png" />
+                    	<p>台化AS/NF2100</p>
+                    	<p>类&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;型：标准料</p>
+                    	<p>加工级别：注塑级</p>
+                    	<p class="temai_new_num">￥<span>6100元/吨</span></p>
+                    	<button class="buy_btn">明日10点开抢</button>
+                    	<!--灰色覆盖层-->
+		        		<div class="sold_out">
+		        			<img src="img/choubei-sm.png" />
+		        		</div>
+                    </div>
+               </div>
+            </div>
+        </div>
+        <div class="img-box"></div>
+    </div>
+    <div class="footer-line">
+    </div>
+    <div class="footer-con1">
+        <div class="con1-inner">
+            <div class="con1-inner-ensure">
+                <img src="img/ic_pinzhi.png">
+                <p>品质保证 原装原厂</p>
+            </div>
+            <div class="con1-inner-ensure">
+                <img src="img/ic_wuliu.png">
+                <p>极速物流 极速送达</p>
+            </div>
+            <div class="con1-inner-ensure">
+                <img src="img/ic_fuwu.png">
+                <p>精致服务 售后无忧</p>
+            </div>
+            <div class="con1-inner-ensure">
+                <img src="img/ic_bangzhu.png">
+                <p>帮助中心 购物指南</p>
+            </div>
+        </div>
+    </div>
+    <div class="footer-con2">
+        <div class="con2-inner">
+            <dl class="con2-inner-desc">
+                <dt>
+                    <span>新手指南</span>
+                </dt>
+                <dd>
+                    <a href="http://www.szplastone.com/about.html" target="_blank">关于我们</a>
+                    <a href="http://www.szplastone.com/agreement.html" target="_blank">服务协议</a>
+                    <a href="http://www.szplastone.com/statement" target="_blank">法律声明</a>
+                </dd>
+            </dl>
+            <dl class="con2-inner-desc">
+                <dt>
+                    <span>如何购买</span>
+                </dt>
+                <dd>
+                    <a href="http://www.szplastone.com/buyer.html" target="_blank">采购流程</a>
+                    <a href="http://www.szplastone.com/payment.html" target="_blank">支付说明</a>
+                    <a href="http://www.szplastone.com/transport.html" target="_blank">物流说明</a>
+                </dd>
+            </dl>
+            <dl class="con2-inner-desc">
+                <dt>
+                    <span>服务支持</span>
+                </dt>
+                <dd>
+                    <a href="http://www.szplastone.com/enter.html" target="_blank">入驻说明</a>
+                    <a href="http://www.szplastone.com/contact.html" target="_blank">联系我们</a>
+                    <a href="http://www.szplastone.com/billing.html" target="_blank">开票说明</a>
+
+                </dd>
+            </dl>
+            <dl class="con2-inner-desc">
+                <dt>
+                    <span>推荐产品</span>
+                </dt>
+                <dd>
+                    <a>塑宝金融</a>
+                    <a>检测服务</a>
+                    <a>仓储服务</a>
+                </dd>
+            </dl>
+            <div class="tel">
+                <p class="tel-text">0755-29236655</p>
+                <p>周一至周五9:00-17:30</p>
+                <p>地址：广东省深圳市宝安区松岗镇东方立业路兆丰祥商务大厦1219</p>
+                <p>邮箱：plastone@126.com</p>
+            </div>
+            <div class="qr-code">
+                <ul>
+                    <li>
+                        <img src="img/sbt_wechat public_qr.png">
+                        <p>关注公众账号</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer-con3">
+        <div class="con3-inner">
+            <div class="copyright">
+                <div class="copy-text">
+                    <a href="http://www.szplastone.com/about.html" target="_blank">关于我们</a>|
+                    <a href="http://www.szplastone.com/news.html" target="_blank">新闻资讯</a>|
+                    <a href="http://www.szplastone.com/enter.html" target="_blank">入驻说明</a>|
+                    <a href="http://www.szplastone.com/contact.html" target="_blank">联系我们</a>|
+                    <a href="http://www.szplastone.com/statement" target="_blank">法律声明</a>
+                </div>
+                <div class="copy">
+                    Copyright © 2015-2017 All Rights Reserved. 粤ICP备15009714号-1
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+    	$(document).ready(function () {
+    	 	$('.seckill_day li').click(function(){
+    	 		$(this).addClass('active').siblings().removeClass('active');
+    	 	});
+    	 	$.leftTime("2018/05/01 00:00:00",function(d){
+				if(d.status){
+					var $dateShow1=$(".time_djs");
+					$dateShow1.find(".d").html(d.d);
+					$dateShow1.find(".h").html(d.h);
+					$dateShow1.find(".m").html(d.m);
+					$dateShow1.find(".s").html(d.s);
+				}
+			});
+    	})
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>店铺首页</title>
+    <link rel="shortcut icon" type="image/x-icon" href="http://static.szplastone.com/resources/images/sbt_logo.ico" media="screen">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-responsive.css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/swiper-4.2.0.min.css">
+    <link rel="stylesheet" href="css/jedate.css" />
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/communicate.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/wrap.css">
+    <link rel="stylesheet" href="css/sign.css">
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/highcharts.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/swiper-4.2.0.min.js"></script>
+    <script type="text/javascript" src="js/scroll.js"></script>
+    <script type="text/javascript" src="js/jedate.js" ></script>
+    <script type="text/javascript" src="js/Marquee.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/m_public.js"></script>
+    <script type="text/javascript" src="js/smoothscroll.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+</head>
+	<body>
+		<!--头部公司公共栏-->
+    <div class="top_box">
+        <div class="loginbar" id="TOP">
+            <p class="hottel left">
+                交易时间（工作日）09:00-17:30 | 客服热线 0755-29236655
+            </p>
+            <div class="login-info right">
+                <span id="login-info">
+                    欢迎您！
+                    <span class='color-06'>
+                        <span style='color: #f53838;'>李白白不白</span>
+                        <ul class="user_check">
+                            <li>
+                                <a href="manage.html">个人中心</a>
+                            </li>
+                            <li>
+                                <a href="#">切换状态</a>
+                            </li>
+                        </ul>
+                    </span>
+                    <a href='loginout.html'>退出</a> |
+                    <a href='manage/msg.html'>我的消息
+                        <span id='topMsg'></span>
+                    </a>
+                </span>
+                <span id="phoneinfo" class="dissy">
+                    <i class="fa fa-mobile fa-1x" aria-hidden="true"></i>手机塑宝通
+                    <i class="fa fa-angle-down"></i>
+                    <div class="mobile-link">
+                        <img src="img/sbt_wechat public_qr.png">
+                    </div>
+                </span>
+            </div>
+        </div>
+    </div>
+    <div class="login-line"></div>
+    <!--搜索-->
+    <div class="header-extra">
+        <div class="sbt-logo-img">
+            <a href="http://www.szplastone.com/index.html" class="on">
+                <img src="img/img_logo.png">
+                <img src="img/logobianziti.png">
+            </a>
+        </div>
+        <div class="sbt-search">
+            <div class="keywords">
+                <span class="on" id="product">产品</span>
+                <span id="shop">店铺</span>
+            </div>
+            <div class="search-box">
+                <input type="text" class="search-img" id="searchInput" placeholder="请输入关键词">
+                <button type="button" class="search-btn" onclick="plas_public.search()">搜索</button>
+            </div>
+            <div class="hotwords">
+                热门搜索：
+                <a href="http://www.szplastone.com/product.html?word=3015">
+                    <span>3015</span>
+                </a>
+                <a href="http://www.szplastone.com/product.html?word=PP">
+                    <span>PP</span>
+                </a>
+                <a href="http://www.szplastone.com/product.html?word=ASA%E8%83%B6%E7%B2%89">
+                    <span>ASA胶粉</span>
+                </a>
+                <a href="http://www.szplastone.com/product.html?word=%E5%8F%B0%E6%B9%BE%E5%8F%B0%E5%8C%96">
+                    <span>台湾台化</span>
+                </a>
+                <a href="http://www.szplastone.com/product.html?word=5090T">
+                    <span>5090T</span>
+                </a>
+                <a href="http://www.szplastone.com/product.html?word=%E5%A1%91%E5%AE%9D%E9%80%9A%E6%96%B0%E6%9D%90%E6%96%99">
+                    <span>塑宝通新材料</span>
+                </a>
+            </div>
+        </div>
+        <div class="activity_box">
+            <a>
+                <div>
+                    <span>阿科玛PMMA</span>
+                    <br/>秒杀价99.8
+                </div>
+            </a>
+        </div>
+    </div>
+    <!--导航栏-->
+    <div class="main-nav inner-con0-slider">
+        <div class="inner-con0">
+            <div class="inner-con1">
+                <div class="inner-con2">
+                    <a href="#" target="_blank">首页</a>
+                    <a href="#" target="_blank">特卖专区</a>
+                    <a href="#" target="_blank">全部商品</a>
+                    <a href="#" target="_blank" class="on">全部商家</a>
+                    <a href="#" target="_blank">采购指南</a>
+                    <a href="#" target="_blank">合伙人招募</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--中间内容-->
+    <div id="content">
+    	<div class="box-hei">
+	    	<div class="bus_banner_info">
+	    		<div class="header_box">
+	    			<img src="img/wutu20180403140916.png" />
+	    			<i></i>
+	    		</div>
+	    		<div class="dpname_info">
+	    			<h1>塑宝通自营<span>郑光明的店铺</span></h1>
+	    			<p>主营：<a href="#">GPPS</a><a href="#">HIPS</a></p>
+	    		</div>
+	    		<div class="dpnum_info">
+	    			<p>访问量：272</p>
+	    			<p>总销量：200.0吨</p>
+	    		</div>
+	    	</div>
+    	</div>
+    	<h1 class="bus_title">店铺详情</h1>
+    	<!--综合排序-->
+        <div class="main-hot">
+            <div class="hot-box">
+                <div class="hot-inner">
+                    <!--排序-->
+                    <div class="hot-filter dianpu">
+                        <!--   时间排序 -->
+                        <a href="#">
+                            <p class="filter-all on">综合排序</p>
+                        </a>
+                        <a href="#">
+                            <p class="filter-all">销量优先</p>
+                        </a>
+                        <a href="#">
+                            <p class="filter-all">价格优先</p>
+                        </a>
+                        <!-- 价格排序 -->
+                        <span class="price-text">价格</span>
+                        <!--价格区间输入框-->
+                        <div class="price-inter">
+                            <span>￥</span>
+                            <input type="text" class="price-input" id="bprice" value="">
+                        </div>
+                        -
+                        <div class="price-inter">
+                            <span>￥</span>
+                            <input type="text" class="price-input" id="eprice" value="">
+                        </div>
+                        <button type="button" class="price-btn">确定</button>
+                        <!--分页-->
+                        <div class="pagenum-add">
+                            <a href="#" aria-label="Next">
+                                <i>></i>
+                            </a>
+                        </div>
+                        <div class="pagenum">
+                            <span class="color-f53838">1</span>/2
+                        </div>
+                        <div class="pagenum-lower">
+                            <a href="#" aria-label="Next">
+                                <i><</i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="futures-box futures-allgoods-box">
+                        <div class="futures-info">
+                            <table>
+                                <tr>
+                                    <th></th>
+                                    <th>品名</th>
+                                    <th>牌号</th>
+                                    <th>厂商</th>
+                                    <th>价格（元/吨）</th>
+                                    <th>库存（吨）</th>
+                                    <th>配送方式</th>
+                                    <th>交货地点</th>
+                                    <th>类型</th>
+                                    <th>交货时间</th>
+                                    <th></th>
+                                    <th>操作</th>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td>ABS</td>
+                                    <td>AG15E1</td>
+                                    <td>宁波台化</td>
+                                    <td>￥16300.00</td>
+                                    <td>18.0</td>
+                                    <td>自提/配送</td>
+                                    <td>东莞</td>
+                                    <td>自营</td>
+                                    <td>备货</td>
+                                    <td>
+                                        <div class="str_info">
+                                            <img src="img/wutu20180403140916.png" />
+                                            <p>郑光明的店铺
+                                                <br>郑光明：13760140809</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <a>采购</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td>ABS</td>
+                                    <td>AG15E1AG15E1</td>
+                                    <td>宁波台化</td>
+                                    <td>￥16300.00</td>
+                                    <td>18.0</td>
+                                    <td>自提/配送</td>
+                                    <td>东莞</td>
+                                    <td>自营</td>
+                                    <td>备货</td>
+                                    <td>
+                                        <div class="str_info">
+                                            <img src="img/wutu20180403140916.png" />
+                                            <p>郑光明的店铺
+                                                <br>郑光明：13760140809</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <a class="guoqi">已过期</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td>ABS</td>
+                                    <td>AG15E1</td>
+                                    <td>宁波台化</td>
+                                    <td>￥16300.00</td>
+                                    <td>18.0</td>
+                                    <td>自提/配送</td>
+                                    <td>东莞</td>
+                                    <td>自营</td>
+                                    <td>备货</td>
+                                    <td>
+                                        <div class="str_info">
+                                            <img src="img/wutu20180403140916.png" />
+                                            <p>郑光明的店铺
+                                                <br>郑光明：13760140809</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <a>采购</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td>ABS</td>
+                                    <td>AG15E1AG15E1</td>
+                                    <td>宁波台化</td>
+                                    <td>￥16300.00</td>
+                                    <td>18.0</td>
+                                    <td>自提/配送</td>
+                                    <td>东莞</td>
+                                    <td>自营</td>
+                                    <td>备货</td>
+                                    <td>
+                                        <div class="str_info">
+                                            <img src="img/wutu20180403140916.png" />
+                                            <p>郑光明的店铺
+                                                <br>郑光明：13760140809</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <a>采购</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td>ABS</td>
+                                    <td>AG15E1</td>
+                                    <td>宁波台化</td>
+                                    <td>￥16300.00</td>
+                                    <td>18.0</td>
+                                    <td>自提/配送</td>
+                                    <td>东莞</td>
+                                    <td>自营</td>
+                                    <td>备货</td>
+                                    <td>
+                                        <div class="str_info">
+                                            <img src="img/wutu20180403140916.png" />
+                                            <p>郑光明的店铺
+                                                <br>郑光明：13760140809</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <a class="guoqi">已过期</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td>ABS</td>
+                                    <td>AG15E1</td>
+                                    <td>宁波台化</td>
+                                    <td>￥16300.00</td>
+                                    <td>18.0</td>
+                                    <td>自提/配送</td>
+                                    <td>东莞</td>
+                                    <td>自营</td>
+                                    <td>备货</td>
+                                    <td>
+                                        <div class="str_info">
+                                            <img src="img/wutu20180403140916.png" />
+                                            <p>郑光明的店铺
+                                                <br>郑光明：13760140809</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <a>采购</a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--分页器-->
+        <div class="paga-con">
+            <nav aria-label="">
+                <ul class="pagination">
+                	<li>
+                        <a href="" class="first">首页</a>
+                    </li>
+                    <li>
+                        <a href="" aria-label="Next" class="before">上一页</a>
+                    </li>
+                    <li class="active">
+                        <span class="yema">
+                            <a aria-label="Next">1</a>
+                        </span>
+                    </li>
+                    <li>
+                        <span class="yema">
+                            <a href="" aria-label="Next">2</a>
+                        </span>
+                    </li>
+                    <li>
+                        <span class="yema">
+                            <a href="" aria-label="Next">3</a>
+                        </span>
+                    </li>
+                    <li>
+                        <span class="yema">
+                            <a href="" aria-label="Next">4</a>
+                        </span>
+                    </li>
+                    <li>
+                        <span class="yema">
+                            <a href="" aria-label="Next">5</a>
+                        </span>
+                    </li>
+                    <li>
+                        <a href="" aria-label="Next" class="after">下一页</a>
+                    </li>
+                    <li>
+                        <a href="" class="last">尾页</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <!--页脚-->
+    <div class="footer-line">
+    </div>
+    <div class="footer-con1">
+        <div class="con1-inner">
+            <div class="con1-inner-ensure">
+                <img src="img/ic_pinzhi.png">
+                <p>品质保证 原装原厂</p>
+            </div>
+            <div class="con1-inner-ensure">
+                <img src="img/ic_wuliu.png">
+                <p>极速物流 极速送达</p>
+            </div>
+            <div class="con1-inner-ensure">
+                <img src="img/ic_fuwu.png">
+                <p>精致服务 售后无忧</p>
+            </div>
+            <div class="con1-inner-ensure">
+                <img src="img/ic_bangzhu.png">
+                <p>帮助中心 购物指南</p>
+            </div>
+        </div>
+    </div>
+    <div class="footer-con2">
+        <div class="con2-inner">
+            <dl class="con2-inner-desc">
+                <dt>
+                    <span>新手指南</span>
+                </dt>
+                <dd>
+                    <a href="http://www.szplastone.com/about.html" target="_blank">关于我们</a>
+                    <a href="http://www.szplastone.com/agreement.html" target="_blank">服务协议</a>
+                    <a href="http://www.szplastone.com/statement" target="_blank">法律声明</a>
+                </dd>
+            </dl>
+            <dl class="con2-inner-desc">
+                <dt>
+                    <span>如何购买</span>
+                </dt>
+                <dd>
+                    <a href="http://www.szplastone.com/buyer.html" target="_blank">采购流程</a>
+                    <a href="http://www.szplastone.com/payment.html" target="_blank">支付说明</a>
+                    <a href="http://www.szplastone.com/transport.html" target="_blank">物流说明</a>
+                </dd>
+            </dl>
+            <dl class="con2-inner-desc">
+                <dt>
+                    <span>服务支持</span>
+                </dt>
+                <dd>
+                    <a href="http://www.szplastone.com/enter.html" target="_blank">入驻说明</a>
+                    <a href="http://www.szplastone.com/contact.html" target="_blank">联系我们</a>
+                    <a href="http://www.szplastone.com/billing.html" target="_blank">开票说明</a>
+
+                </dd>
+            </dl>
+            <dl class="con2-inner-desc">
+                <dt>
+                    <span>推荐产品</span>
+                </dt>
+                <dd>
+                    <a>塑宝金融</a>
+                    <a>检测服务</a>
+                    <a>仓储服务</a>
+                </dd>
+            </dl>
+            <div class="tel">
+                <p class="tel-text">0755-29236655</p>
+                <p>周一至周五9:00-17:30</p>
+                <p>地址：广东省深圳市宝安区松岗镇东方立业路兆丰祥商务大厦1219</p>
+                <p>邮箱：plastone@126.com</p>
+            </div>
+            <div class="qr-code">
+                <ul>
+                    <li>
+                        <img src="img/sbt_wechat public_qr.png">
+                        <p>关注公众账号</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer-con3">
+        <div class="con3-inner">
+            <div class="copyright">
+                <div class="copy-text">
+                    <a href="http://www.szplastone.com/about.html" target="_blank">关于我们</a>|
+                    <a href="http://www.szplastone.com/news.html" target="_blank">新闻资讯</a>|
+                    <a href="http://www.szplastone.com/enter.html" target="_blank">入驻说明</a>|
+                    <a href="http://www.szplastone.com/contact.html" target="_blank">联系我们</a>|
+                    <a href="http://www.szplastone.com/statement" target="_blank">法律声明</a>
+                </div>
+                <div class="copy">
+                    Copyright © 2015-2017 All Rights Reserved. 粤ICP备15009714号-1
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+</html>
